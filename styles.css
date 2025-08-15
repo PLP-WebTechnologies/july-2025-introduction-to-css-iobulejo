@@ -1,60 +1,96 @@
-/* styles.css - External stylesheet for CSS Box Model Demo */
 
+/*
+ 
+ * -----------------------------------------------------
+ * This file demonstrates:
+ * - Proper use of selectors and basic styling properties
+ * - Clear implementation of the CSS Box Model
+ * - Consistent spacing, sizing, and layout styling
+ */
+
+
+/*
+ * Base styles for body and typography
+ */
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Professional, readable font */
+    background: #f4f4f4;           /* Light background for contrast */
+    margin: 0;                     /* Remove default margin */
+    padding: 0;                    /* Remove default padding */
 }
 
-p{
-    align-items: center;
+
+/*
+ * Paragraph alignment 
+ */
+p {
+    align-items: center; /* Note: Has no effect on p by default */
 }
 
+
+/*
+ * Header and footer styling for consistent branding
+ */
 header, footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    background: #333;               /* Dark background for emphasis */
+    color: #fff;                    /* White text for contrast */
+    text-align: center;             /* Centered text */
+    padding: 20px 0;                /* Vertical spacing */
 }
 
+
+/*
+ * Main content area styling
+ * Demonstrates max-width, centering, padding, and box-shadow
+ */
 main {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    
+    max-width: 800px;               /* Limit content width for readability */
+    margin: 30px auto;              /* Center main area horizontally */
+    padding: 20px;                  /* Inner spacing */
+    background: #fff;               /* White background for content */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
+
+/*
+ * Card component - showcases the box model
+ * Includes border, padding, margin, background, and border-radius
+ */
 .card {
-    border: 2px solid #0077cc;
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 32px;
-    background: #eaf6ff;
-    box-sizing: border-box;
+    border: 2px solid #0077cc;      /* Prominent border for box model demo */
+    border-radius: 8px;             /* Rounded corners */
+    padding: 24px;                  /* Inner spacing */
+    margin-bottom: 32px;            /* Space below card */
+    background: #eaf6ff;            /* Light blue background */
+    box-sizing: border-box;         /* Includes padding/border in width/height */
 }
+
 
 .card h2 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    text-align: center;
+    margin-top: 0;                  /* Remove default top margin */
+    margin-bottom: 12px;            /* Space below heading */
+    text-align: center;             /* Center heading text */
 }
 
+
+/*
+ * Grid layout for multiple items
+ * Uses flexbox for responsive horizontal layout
+ */
 .grid {
-    display: flex;
-    gap: 16px;
+    display: flex;                  /* Enable flexbox */
+    gap: 16px;                      /* Space between grid items */
 }
+
 
 .grid-item {
-    flex: 1;
-    background: #d1e7dd;
-    border: 1px solid #bcd0c7;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 6px;
+    flex: 1;                        /* Equal width for all items */
+    background: #d1e7dd;            /* Soft green background */
+    border: 1px solid #bcd0c7;      /* Subtle border */
+    padding: 20px;                  /* Inner spacing */
+    text-align: center;             /* Center item text */
+    box-sizing: border-box;         /* Includes padding/border in width/height */
+    border-radius: 6px;             /* Slightly rounded corners */
 }
 
 
