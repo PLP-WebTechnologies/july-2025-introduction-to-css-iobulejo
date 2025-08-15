@@ -1,0 +1,60 @@
+/* styles.css - External stylesheet for CSS Box Model Demo */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    align-items: center;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+}
+
+.card {
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    background: #eaf6ff;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    gap: 16px;
+}
+
+.grid-item {
+    flex: 1;
+    background: #d1e7dd;
+    border: 1px solid #bcd0c7;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
